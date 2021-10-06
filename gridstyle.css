@@ -7,15 +7,14 @@ div
 {
     display: grid;
     width: 1000px;
-    grid-template-columns: 200px, 200px 200px,;
-    grid-template-rows: 200px, 200px;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px;
     grid-gap: 25px;
 }
 
 #Box1
 {
     background-color: blue;
-    height: 200px;
     font-size: 24px;
     grid-column: 1;
     grid-row: 1;
@@ -38,7 +37,6 @@ div
 {
     background-color: orange;
     font-size: 24px;
-    height: 200px;
     grid-column: 3;
     grid-row: 2;
 }
@@ -82,7 +80,175 @@ div
 {
     background-color: grey;
     font-size: 24px;
-    height: 200px;
     grid-column: 2;
     grid-row: 2;
+}
+
+#layout3 
+{
+    display: grid;
+    grid-template-columns: repeat(9, 100px);
+    grid-template-rows: repeat(7, 100px);
+    grid-gap: 10px;
+}
+#Box11
+{
+    grid-row: 1;
+    grid-column: 1 / 10;
+    background-color: yellowgreen;
+    font-size: 20px;
+}
+#Box12
+{
+    grid-row: 2/7;
+    grid-column: 1 ;
+    background-color: yellowgreen;
+    font-size: 20px;
+}
+#Box13
+{
+    grid-row: 2/7;
+    grid-column: 2/9 ;
+    background: yellowgreen;
+    font-size: 20px;
+}
+#Box14
+{
+    grid-row: 2/7;
+    grid-column: 9 ;
+    background-color: yellowgreen;
+    font-size: 20px;
+}
+#Box15
+{
+    grid-row: 7;
+    grid-column: 1 / 10;
+    background-color: yellowgreen;
+    font-size: 20px;
+}
+#layout4 
+{
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    grid-gap: 0px;
+}
+#Box16
+{
+    grid-row: 1;
+    grid-column: 1/3 ;
+    background-color: turquoise;
+    font-size: 20px;
+}
+#Box17
+{
+    grid-row: 1 / 3;
+    grid-column: 3 / 5 ;
+    background-color: turquoise;
+    font-size: 20px;
+}
+#Box18
+{
+    grid-row: 1 / 3;
+    grid-column: 5 ;
+    background-color: turquoise;
+    font-size: 20px;
+}
+#Box19
+{
+    grid-row: 1 ;
+    grid-column: 6 ;
+    background-color: turquoise;
+    font-size: 20px;
+}
+#Box20
+{
+    grid-row: 2 ;
+    grid-column: 1;
+    background-color: turquoise;
+    font-size: 20px;
+}
+#Box21
+{
+    grid-row: 2 ;
+    grid-column: 2;
+    background-color: turquoise;
+    font-size: 20px;
+}
+#Box22
+{
+    grid-row: 2 ;
+    grid-column: 6;
+    background-color: turquoise;
+    font-size: 20px;
+}
+#Box23
+{
+    grid-row: 3 ;
+    grid-column: 1;
+    background-color: turquoise;
+    font-size: 20px;
+}
+#Box24
+{
+    grid-row: 3 ;
+    grid-column: 2 / 4;
+    background-color: turquoise;
+    font-size: 20px;
+}
+#Box25
+{
+    grid-row: 3 ;
+    grid-column: 4 / 6;
+    background-color: turquoise;
+    font-size: 20px;
+}
+#Box26
+{
+    grid-row: 3 ;
+    grid-column: 6;
+    background-color: turquoise;
+    font-size: 20px;
+}
+#layout5 
+{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px ;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    grid-gap: 0px;
+}
+#Box27
+{
+    grid-row: 1 ;
+    grid-column: 1;
+    background-color: teal;
+    font-size: 20px;
+}
+#Box28
+{
+    grid-row: 2 ;
+    grid-column: 2;
+    background-color: teal;
+    font-size: 20px;
+}
+#Box29
+{
+    grid-row: 3 ;
+    grid-column: 3;
+    background-color: teal;
+    font-size: 20px;
+}
+#Box30
+{
+    grid-row: 4 ;
+    grid-column: 4;
+    background-color: teal;
+    font-size: 20px;
+}
+#Box31
+{
+    grid-row: 5 ;
+    grid-column: 5;
+    background-color: teal;
+    font-size: 20px;
 }
