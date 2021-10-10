@@ -1,1 +1,77 @@
 <!DOCTYPE html>
+<html>
+    <head>
+        <title> School Info </title>
+        <meta charset="utf-8">
+        <meta name = "author" content ="Omari Brown">
+        <link href ="schoolinfostyle.css" rel="stylesheet" type="text/css">
+        <script src = "schoolinfo.js"></script>
+    </head>
+    <header>
+        <center> <h1> School Information </h1></center>
+        <center> <h2>Welcome </h2> </center>
+    </header>
+    <body>
+        <div id="formbox">
+            <h4> Please complete the form below.</h4>
+            <form>
+                <fieldset>
+                    <legend>Student Data:</legend>
+                    <label for="fname">First Name &nbsp &nbsp </label>
+                    <input type="text" id="fname" name="fname"> <br>
+                    <label for="lname">Last Name &nbsp &nbsp</label>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="age">Age &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </label>
+                    <input type="text" id="age" name="age"><br>
+                    <br>
+                    <label for="male">Male </label>
+                    <input type="radio" id="male" name="male">
+                    <label for="female">Female </label>
+                    <input type="radio" id="female" name="female"> <br>
+                    <br>
+
+                    <!--User must provide an option that was given-->
+                    <label for="level">What level student are you?</label>
+                    <select id="level" name="level">
+                        <option value="Infant">Infant</option>
+                        <option value="Primary">Primary</option>
+                        <option value="Secondary">Secondary</option>
+                        <option value="Tertiary">Tertiary</option>
+                    </select><br><br>
+                    
+                    <!--User may provide an option that was not given-->
+                    <label for="subject">What is your favourite subject?</label>
+                    <input list="subject">
+                    <datalist id="subject">
+                        <option value="Mathematics">
+                        <option value="English Language">
+                        <option value="Science">
+                        <option value="Social Studies">
+                    </datalist>
+
+                    <p>How do you get to school?</p>
+                    <label for= "walk">Walk</label>
+                    <input type="checkbox" id="walk" value="walk"><br>
+                    <label for= "taxi">Taxi</label>
+                    <input type="checkbox" id="taxi" value="taxi"><br>
+                    <label for= "cycle">Cycle</label>
+                    <input type="checkbox" id="cycle" value="cycle"><br>
+                    <label for= "parents">Parents</label>
+                    <input type="checkbox" id="parents" value="parents"><br>
+                </fieldset>
+                <br>
+                <input type="submit" id="formsubmit" value="Submit">
+                <input type="reset" id="formreset">
+            </form>
+            <br>
+            <div class="summarybox"></div>
+        </div>
+        <hr>
+        <div>
+
+        </div>
+    </body>
+    <footer>
+        <p> Copyright &copy &trade Omari Brown"</p>
+    </footer>
+</html
