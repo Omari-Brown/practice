@@ -18,11 +18,11 @@
                 <fieldset>
                     <legend>Student Data:</legend>
                     <label for="fname">First Name &nbsp &nbsp </label>
-                    <input type="text" id="fname" name="fname" required> <br>
+                    <input type="text" id="fname" name="fname" required> <br><br>
                     <label for="lname">Last Name &nbsp &nbsp</label>
-                    <input type="text" id="lname" name="lname" required><br>
+                    <input type="text" id="lname" name="lname" required><br><br>
                     <label for="age">Age &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </label>
-                    <input type="number" id="age" name="age" min="0" max="100"><br>
+                    <input type="number" id="age" name="age" min="0" max="100"><br><br>
                     <br>
                     <label for="male">Male </label>
                     <input type="radio" id="male" name="gender" value="Male">
@@ -56,6 +56,8 @@
                     <input type="checkbox" id="taxi" value="taxi"><br>
                     <label for= "cycle">Cycle</label>
                     <input type="checkbox" id="cycle" value="cycle"><br>
+                    <label for= "drive">Drive</label>
+                    <input type="checkbox" id="drive" value="drive"><br>
                     <label for= "parents">Parents</label>
                     <input type="checkbox" id="parents" value="parents"><br>
 
@@ -66,7 +68,7 @@
                 
             </form>
             <br>
-            <center><div class="summarybox">vujh yblblvljjj l</div></center>
+            <center><div class="summarybox"></div></center>
         </div>
         <br>
         <hr>
@@ -74,16 +76,17 @@
         <div id ="average">
             <div id="grade">
                 <h4>Enter your grades below</h4>
-                <form id>
+                <form id="grades">
                     <label for="maths">Mathematics &nbsp &nbsp </label>
-                    <input type="text" id="maths" name="maths"> <br>
+                    <input type="text" id="maths" name="maths"> <br><br>
                     <label for="lang">Language Arts &nbsp &nbsp</label>
-                    <input type="text" id="lang" name="lang"><br>
+                    <input type="text" id="lang" name="lang"><br><br>
                     <label for="social">Social Studies &nbsp &nbsp </label>
-                    <input type="text" id="social" name="social"> <br>
+                    <input type="text" id="social" name="social"> <br><br>
                     <label for="science">Science &nbsp &nbsp</label>
                     <input type="text" id="science" name="science"><br><br>
-                    <button id="avgbtn">Calculate Average</button><br><br>
+                    <button id="avgbtn">Calculate Average</button>
+                    <input type="reset" id="gradereset"><br><br>
                     Result: <output name="average_result" id="average_result" for="math lang social science"></output>
                 </form>
                 
