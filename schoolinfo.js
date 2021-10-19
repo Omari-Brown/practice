@@ -1,5 +1,30 @@
 "use strict";
 
+class Rectangle 
+{
+    constructor (width, height)
+    {
+        this.height = height;
+        this.width = width;
+    }
+    getWidth()
+    {
+        return this.width;
+    }
+    getHeight()
+    {
+        return this.height;
+    }
+    calcArea()
+    {
+        return this.width * this.height;
+    }
+    details()
+    {
+        return `The area of the rectangle is: ` + this.calcArea();
+    }
+}
+
 function validateGradeForm() 
 {
     console.log("Validating gradeform")
@@ -9,19 +34,19 @@ function validateGradeForm()
     let b = myform.elements["lang"].value;
     let c = myform.elements["social"].value;
     let d = myform.elements["science"].value;
-    if (a < 0 || a > 100) 
+    if (a < 0 || a > 100 || a == "") 
     {
       alert("Valid mathematics grade must be submitted.");
       return false;
-    } else if (b < 0 || b > 100) 
+    } else if (b < 0 || b > 100 || b == "") 
     {
       alert("Valid language grade must be submitted.");
       return false;
-    } else if (c < 0 || c > 100) 
+    } else if (c < 0 || c > 100 || c == "") 
     {
       alert("Valid social Studies grade must be submitted.");
       return false;
-    } else if (d < 0 || d > 100) 
+    } else if (d < 0 || d > 100 || d == "") 
     {
       alert("Valid sience grade must be submitted.");
       return false;
@@ -128,4 +153,25 @@ window.onload = function ()
         document.getElementById("science").innerText = "";
         document.getElementById("average_comment").innerText = "";
     }   
+    let area  = document.getElementById("area");
+    console.log(area);
+    var boxes = area.getElementsByTagName("div");
+    console.log(boxes);
+    Array.from(boxes).forEach(function (element)
+    {
+        element.addEventListener("click", function ()
+        {
+            console.log("Width is :", element.offsetWidth);
+            console.log("Width is :", element.offsetHeight);
+            //console.log("Height is :", element.clientWidth);
+            //console.log("Height is :", element.clientHeight);
+            console.log("Creating rectangle")
+            var rect = new Rectangle(element.offsetWidth, element.offsetHeight);
+            console.log(rect)
+            var areamessage = document.createElement("p");
+            areamessage = rect.details();
+            console.log(areamessage)
+            element.append(areamessage);
+        });
+    });
 }
