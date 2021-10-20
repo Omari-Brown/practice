@@ -1,0 +1,32 @@
+header
+{
+    background-color: aquamarine;
+    text-align: center;
+    height: 150px;
+}
+header p
+{
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 20px;
+}
+h1
+{
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+h2
+{
+    font-size: 32px;
+}
+h3
+{
+    font-size: 26px;
+}
+footer
+{
+    display: flex;
+    align-items: center;
+    background-color: greenyellow;
+    height: 40px;
+}
