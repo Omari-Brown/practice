@@ -14,12 +14,61 @@
         <!--<?php include 'header.php'; ?>-->
         <header>
             <h1> Omari's Store </h1>
-            <p> ~Customer Satisfaction is Our Goal~</p>
+            <p> ~ Customer Satisfaction is Our Goal ~</p>
             <h3> Welcome!!! </h3>
         </header>
         <main>
             <h2>Homepage</h2>
-            <p>Please complete the form below to order your items.</p>
+            <section id="orderform">  
+                <p>Select the items you would like to order</p>
+                <div class="grid-container">
+                    <div id="card1" class="card">
+                        <img src="" alt="">
+                        <p>Price: </p>
+                        <p>Details: </p>
+                        <br>
+                        <label name="quantity">Quantity</quantity>
+                        <input type="number" name="quantity"></input>
+                    </div>
+                    <div id="card2" class="card">
+                        <img src="" alt="">
+                        <p>Price: </p>
+                        <p>Details: </p>
+                        <br>
+                        <label name="quantity">Quantity</quantity>
+                        <input type="number" name="quantity"></input>
+                    </div>
+                    <div id="card3" class="card">
+                        <img src="" alt="">
+                        <p>Price: </p>
+                        <p>Details: </p>
+                        <br>
+                        <label name="quantity">Quantity</quantity>
+                        <input type="number" name="quantity"></input>
+                    </div>
+                    <div id="card4" class="card">
+                        <img src="" alt="">
+                        <p>Price: </p>
+                        <p>Details: </p>
+                        <label name="quantity">Quantity</quantity>
+                        <input type="number" name="quantity"></input>
+                    </div>
+                </div> 
+                <br>
+                <br>
+                <div id="total">
+                    <p>onuuon</p>
+                </div>
+            </section>
+            <section id="customerinfo">
+                <p>Please complete the form.</p>
+                <form>
+                    
+                </form>
+                <a href="#">See invoice</a>
+                <br>
+                <br>
+            </section>   
         </main>
         <footer>
             <!--<?php include 'footer.php';?>-->
